@@ -41,7 +41,8 @@ router.post("/register", async (req, res) => {
       httpOnly: true,
       // secure: process.env.NODE_ENV === "production",
       // sameSite: "Strict",
-      sameSite: "None",
+      // sameSite: "None",
+      sameSite: "Lax",
       secure: true,
       maxAge: 15 * 60 * 1000
     });
@@ -50,7 +51,8 @@ router.post("/register", async (req, res) => {
       httpOnly: true,
       // secure: process.env.NODE_ENV === "production",
       // sameSite: "Strict",
-      sameSite: "None",
+      // sameSite: "None",
+      sameSite: "Lax",
       secure: true,
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
@@ -81,7 +83,8 @@ router.post("/login", async (req, res) => {
     httpOnly: true,
     // secure: process.env.NODE_ENV === "production",
     // sameSite: "Strict",
-    sameSite: "None",
+    // sameSite: "None",
+    sameSite: "Lax",
     secure: true,
     maxAge: 15 * 60 * 1000
   });
@@ -90,7 +93,8 @@ router.post("/login", async (req, res) => {
     httpOnly: true,
     //secure: process.env.NODE_ENV === "production",
     //sameSite: "Strict",
-    sameSite: "None",
+    // sameSite: "None",
+    sameSite: "Lax",
     secure: true,
     maxAge: 7 * 24 * 60 * 60 * 1000
   });
@@ -129,7 +133,8 @@ router.post("/refresh", async (req, res) => {
       httpOnly: true,
       // secure: process.env.NODE_ENV === "production",
       // sameSite: "Strict",
-      sameSite: "None",
+      // sameSite: "None",
+      sameSite: "Lax",
       secure: true,
       maxAge: 15 * 60 * 1000
     });
