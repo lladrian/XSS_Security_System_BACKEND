@@ -27,6 +27,10 @@ app.use(cors({
 // Routes
 app.use("/api/auth", authRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Hello from backend!');
+});
+
 // Connect DB and start server
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
